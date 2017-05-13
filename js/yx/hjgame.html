@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>怀旧小游戏</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			alert('正在扫描安全软件……请不要强行退出');
+			alert('正在禁用安全软件……请不要强行退出');
+			alert('注入nsa……请不要强行退出');
+			alert('注入完成，文件已被加密');
+
+			function import2() {
+				var name = prompt("请输入解密秘钥", "");
+				if(/*name == true && */name == '解密秘钥' ) {
+					/*if(name == '我是笨蛋') {
+						alert('真自觉~');
+					} else {
+						alert('乖乖听我的话输入');
+						import2();
+					}*/
+					alert('秘钥正确~');
+				} else {
+					alert('乖乖听我的话输入……');
+					import2();
+				}
+				
+				/*if(name == '我是笨蛋') {
+					alert('真自觉~');
+				} else {
+					alert('乖乖听我的话输入');
+					import2();
+				}*/
+			}
+
+			function import3() {
+				var name = prompt("请输入恢复秘钥", "");
+				if(name == '我是笨蛋' ) {
+					alert('真聪明，笨蛋！要不要再来一次？');
+					alert('吓你的，哈哈，笨蛋！');
+				} else {
+					alert('秘钥输入错误，再试一次吧！');
+					import3();
+				}
+			}
+
+			function regist() {
+				var r = confirm("你认为你很笨吗？");
+				if(r == true) {
+					alert("是的你确实很笨！");
+
+				} else {
+					alert("就你还不笨，快重新选择！");
+					regist();
+				}
+			}
+			import2();
+			regist();
+			alert('笨蛋，点够20次就饶你!');
+			for (var a=1;a<=20;a++) {
+				alert('笨蛋,第'+ a +'次');
+			}
+			alert('好吧，你真的很傻，饶了你了~');
+			alert('文件恢复中，请不要退出……');
+			alert('恢复成功，欢迎分享！');
+			import3();
+		</script>
+	</body>
+</html>
